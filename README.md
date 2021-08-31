@@ -2,7 +2,7 @@
 
 <p  align="center">
 
-<img  width="300px" style="text-align: center;"  src="https://github.com/JairoFra/rai-auto-converter-extension/raw/master/images/icon_128.png">
+<img  style="text-align: center;"  src="/images/icon128.png">
 
 </p>
 
@@ -18,14 +18,12 @@ The has been developed in pure JS, without external dependencies, and following 
 The extension has been submited for publication to the [Chrome Web Store](https://chrome.google.com/webstore/category/extensions) and is currently in the review phase.
 
 To install the extension locally:
-1. **Download** the repository and unpack it.
+1. [**Download**](https://github.com/JairoFra/rai-auto-converter-chrome-extension/archive/refs/heads/master.zip) the repository and unpack it.
 2.  Depending on the browser, go to  **chrome://extensions/**, **edge://extensions/**, **brave://extensions/** or **opera://extensions/**.
 3.  Turn on  **Developer mode**.
 4.  Click  **Load unpacked**.
 
 ## Features
-
-![screenshot1](screenshot1.gif)
 
 ### Extensive range of expressions catched
 Examples:
@@ -49,7 +47,7 @@ Examples:
 * 1 DOLLAR
 
 ### Conversion for small amounts
-If the result of the conversion is greater than 0, but the decimal part is not to be shown, it will be displayed as "minor to" the smallest amount able to be shown. 
+If the result of the conversion is greater than 0, but the decimal part is not to be shown, it will be displayed as "lower than" or "greater than" the smallest amount able to be shown. 
 
 Examples:
 | Result of conversion| Decimal places | Generated output |  Incorrect output |
@@ -66,8 +64,11 @@ It detects amount and and symbol in different nodes. This includes:
 * Nodes separated by spaces or together
 * Amount present at right or left of the symbol (depending on the validity of the format)
 
+
+![screenshot1](/screenshots/screenshot1.gif)
+
 ### Detection of new nodes and changes in existing nodes
-![screenshot2](screenshot2.gif)
+![screenshot2](/screenshots/screenshot2.gif)
 
 ### Ability to enable and disable transformation in real time
 Enabling the automatic transformation will transform the current prices from USD to RAI without the need of refresing the page.
@@ -75,7 +76,7 @@ Disabling the automatic transformation will stop detecting new changes in the pa
 
 
 ## Testing
-A html file with differnt examples can be found [here](/test/test.html).
+A html file with differnt examples can be found [here](https://htmlpreview.github.io/?https://github.com/JairoFra/rai-auto-converter-chrome-extension/blob/master/test/test.html).  View [source code](/test/test.html).
 
 Also, it can be tested in some websites like:
 * [Amazon](https://www.amazon.com/b?node=18505442011&pd_rd_w=1ftxB&pf_rd_p=c0ea6ab5-cabd-4b35-bde7-77a8469504b6&pf_rd_r=MF7AS21Z1Z646GCNZYBB&pd_rd_r=411f30ed-d0a0-4627-9bbc-d719c932007b&pd_rd_wg=UZMwk)
@@ -86,7 +87,7 @@ Also, it can be tested in some websites like:
 
 ## Configuration options
 
-![screenshot3](screenshot3.gif)
+![screenshot3](/screenshots/screenshot3.png)
 
 #### On/Off switch
 To start and stop automatic conversion of USD to RAI. Can be found at the top right corner and works in real time. 
@@ -108,3 +109,15 @@ The conversion rate is continuously updated in order to offer an acurate convers
 * Minimun: 3
 * Maximun: 3600 (1 hour)
 * Default: 300 (5 minutes)
+
+
+## Further developmens
+New features to be added:
+* Conversion for other currencies
+* Blakclisting URLs
+* New proposals from the [Reflexer Labs](https://reflexer.finance/)
+
+
+## Issues
+Please, submit any found issues of proposals [here](https://github.com/JairoFra/rai-auto-converter-chrome-extension/issues).
+
