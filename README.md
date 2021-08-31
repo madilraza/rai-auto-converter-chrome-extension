@@ -118,6 +118,9 @@ New features to be added:
 * New proposals from the [Reflexer Labs](https://reflexer.finance/)
 
 
+## License
+Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
+
 ## Issues
 Please, submit any found issues of proposals [here](https://github.com/JairoFra/rai-auto-converter-chrome-extension/issues).
 
