@@ -10,12 +10,12 @@
 Extension for Chromium based browsers to automatically convert USD to [RAI](https://reflexer.finance/).
 
   
-The has been developed in pure JS, without external dependencies, and following the [Chrome Developers best practices](https://developer.chrome.com/docs/webstore/best_practices/), which includes using lastest [Manifest V3](https://developer.chrome.com/docs/extensions/mv3/intro/mv3-overview/). 
+It has been developed in pure JS, without external dependencies, and following the [Chrome Developers best practices](https://developer.chrome.com/docs/webstore/best_practices/), which include using the latest [Manifest V3](https://developer.chrome.com/docs/extensions/mv3/intro/mv3-overview/). 
   
 
 ## Installation
 
-The extension has been submited for publication to the [Chrome Web Store](https://chrome.google.com/webstore/category/extensions) and is currently in the review phase.
+The extension has been submitted for publication to the [Chrome Web Store](https://chrome.google.com/webstore/category/extensions) and is currently in the review phase.
 
 To install the extension locally:
 1. [**Download**](https://github.com/JairoFra/rai-auto-converter-chrome-extension/archive/refs/heads/master.zip) the repository and unpack it.
@@ -25,7 +25,7 @@ To install the extension locally:
 
 ## Features
 
-### Extensive range of expressions catched
+### Extensive range of expressions detected
 Examples:
 * 1 $
 * $ 1
@@ -56,7 +56,7 @@ Examples:
 | -0.00041| 3 | >-0.001 RAI | -0.000 RAI |
 
 ### Amounts and symbols in different nodes
-It detects amount and and symbol in different nodes. This includes:
+It detects amount and symbol in different nodes. This includes:
 * Amount and symbol at same level
 * Amount at a higher level than symbol
 * Amount at a lower level than symbol
@@ -71,12 +71,12 @@ It detects amount and and symbol in different nodes. This includes:
 ![screenshot2](/screenshots/screenshot2.gif)
 
 ### Ability to enable and disable transformation in real time
-Enabling the automatic transformation will transform the current prices from USD to RAI without the need of refresing the page.
-Disabling the automatic transformation will stop detecting new changes in the page without the need of refresing it.
+Enabling the automatic transformation will transform the current prices from USD to RAI without the need of refreshing the page.
+Disabling the automatic transformation will stop detecting new changes in the page without the need of refreshing it.
 
 
 ## Testing
-A html file with differnt examples can be found [here](https://htmlpreview.github.io/?https://github.com/JairoFra/rai-auto-converter-chrome-extension/blob/master/test/test.html).  View [source code](/test/test.html).
+A html file with different examples can be found [here](https://htmlpreview.github.io/?https://github.com/JairoFra/rai-auto-converter-chrome-extension/blob/master/test/test.html).  View [source code](/test/test.html).
 
 Also, it can be tested in some websites like:
 * [Amazon](https://www.amazon.com/b?node=18505442011&pd_rd_w=1ftxB&pf_rd_p=c0ea6ab5-cabd-4b35-bde7-77a8469504b6&pf_rd_r=MF7AS21Z1Z646GCNZYBB&pd_rd_r=411f30ed-d0a0-4627-9bbc-d719c932007b&pd_rd_wg=UZMwk)
@@ -94,8 +94,8 @@ To start and stop automatic conversion of USD to RAI. Can be found at the top ri
 
 #### Number of decimals
 The number of decimals in RAI amount to be displayed in the HTML. 
-* Minimun: 0
-* Maximun: 18
+* Minimum: 0
+* Maximum: 18
 * Default: 2
 
 #### Type of price
@@ -105,22 +105,22 @@ The type of price to be used in order to calculate the conversion from USD to pr
 * Default: Redemption price
 
 #### Conversion rate interval
-The conversion rate is continuously updated in order to offer an acurate conversion without delays. The update interval time can be adjusted in seconds.
-* Minimun: 3
-* Maximun: 3600 (1 hour)
+The conversion rate is continuously updated in order to offer an accurate conversion without delays. The update interval time can be adjusted in seconds.
+* Minimum: 3
+* Maximum: 3600 (1 hour)
 * Default: 300 (5 minutes)
 
 
-## Further developmens
+## Further developments
 New features to be added:
 * Conversion for other currencies
-* Blakclisting URLs
-* New proposals from the [Reflexer Labs](https://reflexer.finance/)
+* Blacklisting URLs
+* New proposals from the [Reflexer Labs](https://reflexer.finance/) community
 
 
 ## License
 Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
 ## Issues
-Please, submit any found issues of proposals [here](https://github.com/JairoFra/rai-auto-converter-chrome-extension/issues).
+Please, submit any issues or proposals [here](https://github.com/JairoFra/rai-auto-converter-chrome-extension/issues).
 
