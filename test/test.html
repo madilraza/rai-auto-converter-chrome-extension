@@ -1,0 +1,234 @@
+
+
+<div style="padding: 3rem;">
+    <h1>Samples</h1>
+
+    <h2>Currency and amount in same node</h2>
+    <div>
+        <h4>With space</h4>
+        <div>
+            <p>111.11 $</p>
+            <p>$ 111.11</p>
+            <p>111,111 USD</p>
+            <p>111,111 U.S.D.</p>
+            <p>-111,111 US$</p>
+            <p>111,111 U.S.$</p>
+            <p>-111,111 US $</p>
+            <p>111,111 U.S. $</p>
+            <p>USD 111,111</p>
+            <p>U.S.D. 111,111</p>
+            <p>US$ 111,111</p>
+            <p>U.S.$ 111,111</p>
+            <p>US $ 111,111</p>
+            <p>U.S. $ 111,111</p>
+            <p>-11 us dollars</p>
+            <p>11 US Dollar</p>
+            <p>11 Dollars</p>
+            <p>11 DOLLAR</p>
+        </div>
+        <hr>
+
+        <h4>Without space</h4>
+        <div>
+            <p>111.11$</p>
+            <p>$111.11</p>
+            <p>-111,111USD</p>
+            <p>111,111U.S.D.</p>
+            <p>111,111US$</p>
+            <p>111,111U.S.$</p>
+            <p>111,111US $</p>
+            <p>-111,111U.S. $</p>
+            <p>USD111,111</p>
+            <p>U.S.D.111,111</p>
+            <p>US$-111,111</p>
+            <p>U.S.$111,111</p>
+            <p>US $111,111</p>
+        </div>
+        <hr>
+
+        <h4>More than one in same node</h4>
+        <div>
+            <p>11.1$ - $222 - 33.33USD</p>
+            <p>44,44.44 US DOLLARS - 55 dollars</p>
+        </div>
+        <hr>
+
+        <h4>Do NOT catch</h4>
+        <div style="text-decoration:line-through;">
+            <p>$1$</p>
+            <p>$1F</p>
+            <p>111,111.USD</p>
+            <p>1$11.11</p>
+            <p>Dollar 1</p>
+        </div>
+        <hr>
+    </div>
+
+    <h2>Currency and amount in different nodes</h2>
+    <div>
+        <h4>Amount in 'uncle' right nodes</h4>
+        <div>
+            <p>
+                <span style="font-size: small;"> $ </span> 1,111.11
+            </p>
+            <p>
+                <span style="font-size: small;">$</span>1,111.11
+            </p>
+        </div>
+        <hr>
+
+        <h4>Amount in 'uncle' left nodes</h4>
+        <div>
+            <p>
+                1,111 <span> Dollars </span>
+            </p>
+            <p>
+                1,111<span>Dollars</span>
+            </p>
+        </div>
+        <hr>
+
+        <h4>Amount in 'cousin' right nodes</h4>
+        <div>
+            <!-- One node has amount with cents -->
+            <p>
+                <span style="font-size: small;"> $ </span> <span> 222.22 </span>
+            </p>
+            <p>
+                <span style="font-size: small;">$</span><span>222.22</span>
+            </p>
+            <!-- One node and no cents -->
+            <p>
+                <span style="font-size: small;"> USD </span> <span> 222 </span> <span> foo </span>
+            </p>
+            <p>
+                <span style="font-size: small;">USD</span><span>222</span><span> foo</span>
+            </p>
+            <!-- One node has dollars and another node cents -->
+            <p>
+                <span style="font-size: small;"> USD </span> <span> 222 </span> <span style="font-size: small;"> 22 </span>
+            </p>
+            <p>
+                <span style="font-size: small;">USD</span><span>222</span><span style="font-size: small;">22</span>
+            </p>
+        </div>
+        <hr>
+
+        <h4>Amount in 'cousin' left nodes</h4>
+        <div>
+            <!-- One node has amount with cents -->
+            <p>
+                <span> 222.22 </span> <span> Dollars </span> 
+            </p>
+            <p>
+                <span>222.22</span><span>Dollars</span> 
+            </p>
+            <!-- One node and no cents -->
+            <p>
+                <span> foo </span> <span>222</span> <span> $ </span> 
+            </p>
+            <p>
+                <span>foo </span><span>222</span><span>$</span> 
+            </p>
+            <!-- One node has dollars and another node cents -->
+            <p>
+                <span> 222 </span> <span style="font-size: small;"> 22 </span> <span> USD </span>
+            </p>
+            <p>
+                <span>222</span><span style="font-size: small;">22</span><span>USD</span>
+            </p>
+        </div>
+        <hr>
+
+        <h4>Amount in 'nephew' right nodes</h4>
+        <div>
+            <!-- One node has amount with cents -->
+            <p>
+                USD <span> 33.33 </span>
+            </p>
+            <p>
+                USD<span>33.33</span>
+            </p>
+            <!-- One node and no cents -->
+            <p>
+                <span style="font-size: small;"> USD </span> <span> 33 </span> <span> foo </span>
+            </p>
+            <p>
+                <span style="font-size: small;">USD</span><span>33</span><span> foo</span>
+            </p>
+            <!-- One node has dollars and another node cents -->
+            <p>
+                <span style="font-size: small;"> USD </span> <span> 33 </span> <span style="font-size: small;"> 33 </span>
+            </p>
+            <p>
+                <span style="font-size: small;">USD</span><span>33</span><span style="font-size: small;">33</span>
+            </p>
+        </div>
+        <hr>
+        
+        <h4>Amount in 'nephew' left nodes</h4>
+        <div>
+            <!-- One node has amount with cents -->
+            <p>
+                <span> 333.33 </span> USD
+            </p>
+            <p>
+                <span>333.33</span>USD
+            </p>
+            <!-- One node and no cents -->
+            <p>
+                <span> foo </span> <span> 333 </span> <span> USD </span>
+            </p>
+            <p>
+                <span>foo </span><span>333</span><span>USD</span>
+            </p>
+            <!-- One node has dollars and another node cents -->
+            <p>
+                <span> 333 </span> <span style="font-size: small;"> 33 </span> <span> USD </span>
+            </p>
+            <p>
+                <span>333</span><span style="font-size: small;">33</span><span>USD</span>
+            </p>
+        </div>
+        <hr>
+
+        <h4>Do NOT catch</h4>
+        <div style="text-decoration:line-through;">
+            <p>
+                <span>US Dollars</span><span>44</span> 
+            </p>
+            <p>
+                <span>dollars</span> <span>44</span>
+            </p>
+            <p>
+                Dollar <span>44</span>
+            </p>
+            <p>
+                <span>$</span><span>foo</span>
+            </p>
+            <p>
+                <span>foo</span> <span>dollars</span>
+            </p>
+            <p>
+                <span>$</span>foo
+            </p>
+            <p>
+                foo <span>dollars</span>
+            </p>
+            <p>
+                $<span>foo</span>
+            </p>
+            <p>
+                <span>foo</span> dollars
+            </p>
+        </div>
+        <hr>
+    </div>
+
+    <h2>Small amounts</h2>
+    <div>
+        <p>$0.01</p>
+        <p>$-0.01</p>
+        <p>$0</p>
+    </div>
+</div>

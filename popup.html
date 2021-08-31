@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="title">
+      <h1><span>RAI Auto-Converter</span>
+        <div class="switch-container">
+          <label class="switch">
+            <input id="enabled" type="checkbox" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+      </h1>
+    </div>
+    <div class="content">
+      <div class="price">
+        <img src="./images/icon128.png">
+        <span>1 RAI = $</span><span id="raiPrice">?</span>
+      </div>
+      <div class="input-group">
+        <label>Number of decimals:</label>
+        <input id="decimals" class="form-input" type="number" min="0" max="18" value="2">
+      </div>
+      <div class="input-group">
+        <label>Type of price:</label>
+        <select id="priceType" class="form-input">
+          <option value="0">Redemption price</option>
+          <option value="1">Market price</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label>Conversion rate interval:</label>
+        <input id="interval" class="form-input" type="number" min="3" max="3600" value="300">
+        <span>secs.</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</html>

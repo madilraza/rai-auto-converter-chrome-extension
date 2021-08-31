@@ -1,0 +1,136 @@
+body {
+    font-family: 'Inter', sans-serif;
+    color: rgb(44, 44, 44);
+    background-color: rgb(240, 240, 240);
+    font-size: 0.8rem;
+    margin: 0;
+    width: 320px;
+    padding-bottom: 20px;
+}
+
+.title {
+  background-color: #24c7a7;
+  padding: 8px 15px;
+}
+
+.title h1 {
+  text-align: left;
+  font-size: 1.3rem;
+  margin: 0;
+  color: white;
+}
+
+.content {
+  padding: 15px 25px;
+}
+
+.price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  display: table;
+  margin: 0 auto 8px auto;
+}
+
+.price img {
+  height: 48px;
+  margin-right: 8px;
+}
+
+.price img, .price span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.input-group {
+  padding-top: 8px;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button, 
+input::-webkit-inner-spin-button { 
+  margin-left: 5px; 
+} 
+
+.form-input {
+  color: #495057;
+  display: inline-block;
+  padding: 4px 7px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+#decimals {
+  width: 54px;
+  text-align: right;
+}
+
+#interval {
+  width: 70px;
+  text-align: right;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+button, input, select {
+  font-family: inherit;
+}
+
+.switch-container {
+  float: right;
+  margin-top: 3px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 21px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 21px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border: 2px white solid;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #24c7a7;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
