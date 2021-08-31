@@ -39,7 +39,6 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
  */
 const observer = new MutationObserver(mutations => {
   mutations.forEach(function(mutation) {
-    console.log(mutation);
     if (mutation.type === 'characterData') {
       searchCurrency(mutation.target.parentNode);
     } else if (mutation.type === 'childList') {
