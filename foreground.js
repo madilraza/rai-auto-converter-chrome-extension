@@ -43,7 +43,7 @@ const observer = new MutationObserver(mutations => {
       searchCurrency(mutation.target.parentNode);
     } else if (mutation.type === 'childList') {
       mutation.addedNodes.forEach(node => {
-        searchCurrency(node.parentNode);
+        searchCurrency(node);
       });
     }
   });
