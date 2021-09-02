@@ -15,9 +15,9 @@ It has been developed in pure JS, without external dependencies, and following t
 
 ## Installation
 
-The extension has been submitted for publication to the [Chrome Web Store](https://chrome.google.com/webstore/category/extensions) and is currently in the review phase.
+You can install it from the [Chrome Web Store](https://chrome.google.com/webstore/detail/rai-auto-converter/jmjmjclpjkjcnmgidjcdldoldejehnlh).
 
-To install the extension locally:
+Alternatively, to install the extension locally:
 1. [**Download**](https://github.com/JairoFra/rai-auto-converter-chrome-extension/archive/refs/heads/master.zip) the repository and unpack it.
 2.  Depending on the browser, go to  **chrome://extensions/**, **edge://extensions/**, **brave://extensions/** or **opera://extensions/**.
 3.  Turn on  **Developer mode**.
